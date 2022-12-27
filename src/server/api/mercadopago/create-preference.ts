@@ -1,13 +1,9 @@
-import mercadopago from 'mercadopago';
+import { serverMercadopagoClient } from '#mercadopago/server';
 import { CreatePreferencePayload } from 'mercadopago/models/preferences/create-payload.model';
 
 export default defineEventHandler(async event => {
 	const runtimeConfig = useRuntimeConfig();
-
-	mercadopago.configure({
-		access_token: runtimeConfig.mercadopagoAccessToken,
-		integrator_id: runtimeConfig.mercadopagoIntegratorId,
-	});
+	const mercadopago = serverMercadopagoClient(event);
 
 	const body = await readBody(event);
 

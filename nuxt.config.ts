@@ -10,13 +10,15 @@ export default defineNuxtConfig({
 			size: '1.5em',
 		},
 	},
-	modules: ['@unocss/nuxt', 'nuxt-icon', '@nuxtjs/supabase'],
+	modules: [
+		'@unocss/nuxt',
+		'nuxt-icon',
+		'@nuxtjs/supabase',
+		'nuxt-mercadopago',
+	],
 	runtimeConfig: {
-		mercadopagoAccessToken: '',
-		mercadopagoIntegratorId: '',
 		public: {
 			baseUrl: '',
-			mercadopagoPublicKey: '',
 		},
 	},
 	srcDir: 'src',

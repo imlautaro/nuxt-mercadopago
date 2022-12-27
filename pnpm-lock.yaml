@@ -7,6 +7,7 @@ specifiers:
   mercadopago: ^1.5.14
   nuxt: 3.0.0
   nuxt-icon: ^0.1.8
+  nuxt-mercadopago: ^1.0.0
 
 devDependencies:
   '@nuxtjs/supabase': 0.3.0
@@ -15,6 +16,7 @@ devDependencies:
   mercadopago: 1.5.14
   nuxt: 3.0.0
   nuxt-icon: 0.1.8
+  nuxt-mercadopago: 1.0.0
 
 packages:
 
@@ -3705,6 +3707,17 @@ packages:
       - rollup
       - supports-color
       - vue
+    dev: true
+
+  /nuxt-mercadopago/1.0.0:
+    resolution: {integrity: sha512-alkPzbuAvwsQINOwJSR0bZ/MgQ7opf6Nl5m4MT+dj8Ytz1YKYrfqBFh/u3V70P17Ny83OMnDwT68an+yoPvF9Q==}
+    dependencies:
+      '@nuxt/kit': 3.0.0
+      defu: 6.1.1
+      mercadopago: 1.5.14
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: true
 
   /nuxt/3.0.0:
